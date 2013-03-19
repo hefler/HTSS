@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>HTML GUI Elements Template Sheet</title>
+	<style>
+		/*HTSS own styling*/
+		h1.HTSS-styling, h2.HTSS-styling {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-weight: 100;
+			text-transform: uppercase;
+		}
+		h1.HTSS-styling { font-size: 4em; }
+		h2.HTSS-styling { font-size: 2.75em; }
+	</style>
+</head>
+<body>
+	<!--
+		Use this template as a starting point for you applying your style sheet to elements. 
+		This is an working in progress and contributions are welcomed!
+	-->
+	<header>
+		<h1 class="HTSS-styling"><abbr title="HTML Template Sheet for Styling">HTSS</abbr> - HTML Template Sheet for Styling</h1>
+		<hr>
+	</header>
+	<section class="HTSS-styling">
+		<h2 class="HTSS-styling">Block-level markup</h2>
+		<hr>
+		<hgroup>
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<h6>Header 6</h6>
+		</hgroup>
+		<p>PARAGRAPH<br> Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+		<blockquote>BLOCKQUOTE<br> Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</blockquote>
+		<ul>
+			<li>Unordered List</li>
+			<li>I'm serious as a heart attack</li>
+			<li>No man, I don't eat pork</li>
+		</ul>
+		<ol>
+			<li>Ordered List</li>
+			<li>I'm serious as a heart attack</li>
+			<li>No man, I don't eat pork</li>
+		</ol>
+		<dl>
+			<dt>Definition List</dt>
+			<dd>No man, I don't eat pork</dd>
+		</dl>
+		<table>
+			<caption>
+				<p>This a table caption.</p>
+			</caption>
+			<thead>
+				<tr>
+					<th>Table head</th>
+					<th>Table head</th>
+					<th>Table head</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>tfoot&gt;td</td>
+					<td>tfoot&gt;td</td>
+					<td>tfoot&gt;td</td>
+				</tr>
+			</tfoot>
+			<tbody>
+			<tr>
+				<td>TD #1</td>
+				<td>TD #2</td>
+				<td>TD #3</td>
+			</tr>
+			<tr>
+				<td>TD #1</td>
+				<td>TD #2</td>
+				<td>TD #3</td>
+			</tr>
+			</tbody>
+		</table>
+		<h2 class="HTSS-styling">Text-level markup</h2>
+		<hr>
+		<ul>
+			<li><a href="javascript:;">a href</a> represents a hyperlink 
+			<li><a href="http://google.com">a:visited href</a> represents a hyperlink that has been visited
+			<li><mark>mark</mark> (the <code>mark</code> element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context
+			<li><abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation; <code>abbr</code> markup used)
+			<li><b>bolded</b> (<code>b</code> markup used - just bolding with unspecified semantics)
+			<li><cite>Origin of Species</cite> (a book title; <code>cite</code> markup used)
+			<li><code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)
+			<li>here we have some <del>deleted</del> text (<code>del</code> markup used)
+			<li>an <dfn>octet</dfn> is an entity consisting of eight bits (<code>dfn</code> markup used for the term being defined)
+			<li>this is <em>very</em> simple (<code>em</code> markup used for emphasizing a word)
+			<li><i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)
+			<li>here we have some <ins>inserted</ins> text (<code>ins</code> markup used)
+			<li>type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup used for text indicating keyboard input)
+			<li><q>Hello!</q> (<code>q</code> markup used for quotation)
+			<li>He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)
+			<li>you may get the message <samp>Core dumped</samp> at times (<code>samp</code> markup used for sample output)
+			<li><small>this is not that important</small> (<code>small</code> markup used)
+			<li><strong>this is highlighted text</strong> (<code>strong</code> markup used)
+			<li>In order to test how subscripts and superscripts (<code>sub</code> and
+			   <code>sup</code> markup) work inside running text, we need some
+			   dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O
+			   (where subscripts occur). So here is some fill so that
+			   you will (hopefully) see whether and how badly the subscripts
+			   and superscripts mess up vertical spacing between lines.
+			   Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some
+			   mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>,
+			   and some nested superscripts (exponents) too:
+			   e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup>
+			   (where 2 and a+b+c should appear as exponents of exponents).
+			<li><u>underlined</u> text (<code>u</code> markup used)
+			<li>the command <code>cat</code> <var>filename</var> displays the file specified by the <var>filename</var> (<code>var</code> markup used to indicate a word as a variable).
+		</ul>
+	</section>
+	<form class="HTSS-styling">
+		<h2 class="HTSS-styling">Form markup</h2>
+		<hr>
+		<fieldset>
+			<legend>Fieldset</legend>
+			<p><label for="input-text">Input text</label><input type="text" id="input-text" value="" list="input-datalist"></p>
+			<p><label for="input-number">Input number</label><input type="number" id="input-number" value="0"></p>
+			<p><label for="input-search">Input search</label><input type="search" id="input-search" value=""></p>
+			<p><label for="input-checkbox">Input checkbox</label><input type="checkbox" id="input-checkbox" value=""></p>
+			<p><label for="input-radio">Input radio</label><input type="radio" id="input-radio" value=""></p>
+			<p><label for="input-color">Input color</label><input type="color" id="input-color" value="#000000"></p>
+			<p><label for="input-date">Input date</label><input type="date" id="input-date" value="2012-01-01"></p>
+			<p><label for="input-file">Input file</label><input type="file" id="input-file"></p>
+			<p><label for="input-range">Input range</label><input type="range" id="input-range" value="10"></p>
+			<p><label for="input-select">Select</label>
+			<select id="input-select">
+				<optgroup label="OptGroup">
+					<option>Option 1</option>
+					<option>Option 2</option>
+				</optgroup>
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option>Option 3</option>
+				<option>Option 4</option>
+			</select></p>
+			<p><label>Datalist</label><datalist id="input-datalist">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+			</datalist></p>
+			<p><label for="input-textarea">Textarea</label><textarea id="input-textarea">textarea</textarea></p>
+			<p><label>Progress</label><progress id="input-progress"></progress></p>
+			<p><label>Meter</label><meter id="input-meter" value="1" max="1" min="0"></meter></p>
+		</fieldset>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		<button>Button</button>
+	</form>
+	<menu type="toolbar">
+	  <menu label="File">File
+	   <button type="button">New...</button>
+	   <button type="button">Open...</button>
+	   <button type="button">Save</button>
+	   <button type="button">Save as...</button>
+	  </menu>
+	  <menu label="Edit">Edit
+	   <button type="button">Copy</button>
+	   <button type="button">Cut</button>
+	   <button type="button">Paste</button>
+	  </menu>
+	  <menu label="Help">
+	   <li><a href="#help">Help</a></li>
+	   <li><a href="#about">About</a></li>
+	  </menu>
+	</menu>
+	<section class="HTSS-styling">
+	<pre><code>
+	(function(win)
+	{
+		/**
+		 * @author Felipe Hefler
+		 * www.underscoreattack.com
+		 */
+		win.console.log('Hello World');
+	})(window);
+	</code></pre>
+	</section>
+</body>
+</html>
